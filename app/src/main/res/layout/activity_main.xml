@@ -6,16 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
+  <!--Se coloca el scroll para que la imagenes se vean en lista y no interpuesta una sobre la otra para brindar mas espacio -->
   <ScrollView
       android:layout_width="match_parent"
       android:layout_height="match_parent">
 
+    <!--El LinearLayout es para mantener los elementos fijos-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+      <!--El TextView Es el titulo-->
       <TextView
           android:id="@+id/textView"
           android:layout_width="match_parent"
@@ -27,6 +29,7 @@
           android:textSize="30sp"
           android:textStyle="bold" />
 
+      <!--El ListView es donde va almacenar las imagenes y los precios de los platos -->
       <ListView
           android:id="@+id/listVie"
           android:layout_width="match_parent"
@@ -34,7 +37,7 @@
         <!--Se crea otro new elemento xml -->
 
       </ListView>
-
+      <!--El Button para comprar los platos -->
       <Button
           android:id="@+id/button"
           android:layout_width="match_parent"
@@ -42,7 +45,7 @@
           android:text="@string/btnComprar"
           android:onClick="comprar"
           />
-
+      <!--El Button para reiniciar nuevamente la cuenta-->
       <Button
           android:id="@+id/button2"
           android:layout_width="match_parent"
